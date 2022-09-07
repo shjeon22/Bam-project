@@ -1,0 +1,91 @@
+MODEL2
+ ->디자인/개발(비지니스로직을 분리
+MVC
+Model :db연동 ,데이터처리(비즈니스 로직)= java 형태로 바뀜
+view : 디자인 -> jsp/html
+controllar : model-view연결시키는 동작
+
+
+(m)모델 = 로직 처리 클래스, 자바빈
+(v)뷰 = JSP
+(c)컨트롤러 = 서블릿
+
+
+       (request)
+클라이언트   ->Controllar  <-> model <->DB
+(사용자)         | 
+              view 
+
+*MVC 패턴을 사용하는 이유 : 디자인 개발(비지니스로직)을 분리
+  =>관심사의 분리 = 분업하자
+  =>좋은 프로그램(코드) 작성(SOLID 개발원칙)
+
+탬플릿 을 다운받아서 사용
+top.bottom나눠서 처리 왜냐하면 한꺼번에 페이지 상단 하단을 관리할 수 있기 때문에
+ 
+ ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  web.xml> 페이지 설명
+ <servlet>
+
+  	<servlet-name>test</servlet-name><!-- 가상주소와 실제주소를 맵핑시켜주기 위한 별명 -->
+
+  	<servlet-class>myservlet.TestServlet</servlet-class><!-- 실제 주소 경로-->
+
+  </servlet>
+
+  
+
+  <servlet-mapping>
+
+  		<servlet-name>test</servlet-name><!-- 가상주소와 실제주소를 맵핑시켜주기 위한 별명 -->
+
+  		<url-pattern>/test</url-pattern> <!-- 가상경로 -->
+                  *.bo =>*은 모든 파일은 설명함
+  </servlet-mapping>
+
+ 
+참조 :https://sowon-dev.github.io/2020/08/16/200817jspi2/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+* 상대주소
+./BoardWrite.bo(가상주소)
+=> " ./ "  의 의미는 프로젝트명(jspMVC)
+[/jspMVC/BoardWrite.bo]
+
+
+./center/notice.jsp(실제주소)
+=> " ./ "  의 의미는 WebContent
+[WebContent/Center/notice.jsp]
+
+
+서버실행 -> web.xml 실행해서 매핑해서 *.bo가 있는지 확인하고 컨트롤러로(BoardFrontController= 컨트롤러명) 가라고말함
+Controller 1)get방식 / 2)post방식  이두개 확인개별적으로 힘드므로  => process 방식으로  합침(get/post통합)
+                              =>그다음에 [1] 가상주소 계산
+                              =>      [2] 가상주소 매핑
+                              =>      [3] 
+
+                              
+                              
+                              *mvc 쇼핑몰
+                              1)t관리자 상품등록
+                              
+                              
+                              
+        String 
+         버퍼 x        
+         실행된 메서드의 결과 저장 x                    
+                  String str="hello"            
+                              
+       StringBuffer                  
+        버퍼 o          
+       실행된 메서드의 결과 저장  o                     
+       StringBuffer buf =new StringBuffer();
+                                    buf.append("hello");      
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>jspMVC</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+<!-- 게시판 만들기  -->
+	<servlet>
+		<servlet-name>BoardFrontController</servlet-name>
+		<servlet-class>com.j.board.action.BoardFrontController</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BoardFrontController</servlet-name>
+		<url-pattern>*.bo</url-pattern>
+	</servlet-mapping>
+<!-- 게시판 만들기  -->
+
+
+	<!--한글 처리 하기 -->
+
+	<filter>
+
+		<filter-name>SetUTF</filter-name>
+		<filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+
+	</filter>
+
+	<filter-mapping>
+
+		<filter-name>SetUTF</filter-name>
+		<url-pattern>/*</url-pattern>
+
+	</filter-mapping>
+
+
+
+
+	<!--메인 -->
+
+	<servlet>
+		<servlet-name>MainFrontController</servlet-name>
+		<servlet-class>main.action.MainFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MainFrontController</servlet-name>
+		<url-pattern>*.ma</url-pattern>
+	</servlet-mapping>
+	
+	<!--메인 -->
+	<!--로그인(회원)처리 -->
+
+	<servlet>
+		<servlet-name>MemberFrontController</servlet-name>
+		<servlet-class>com.j.member.action.MemberFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MemberFrontController</servlet-name>
+		<url-pattern>*.me</url-pattern>
+	</servlet-mapping>
+	
+	<!--로그인 (회원)처리 -->
+	<!--지도 -->
+
+	<servlet>
+		<servlet-name>MapFrontController</servlet-name>
+		<servlet-class>map.action.MapFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MapFrontController</servlet-name>
+		<url-pattern>*.mp</url-pattern>
+	</servlet-mapping>
+	
+	<!--지도 -->
+	<!--마이페이지 -->
+
+	<servlet>
+		<servlet-name>MypageFrontController</servlet-name>
+		<servlet-class>mypage.action.MypageFrontController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MypageFrontController</servlet-name>
+		<url-pattern>*.myp</url-pattern>
+	</servlet-mapping>
+	
+	<!--마이페이지 -->
+
+
+  <!-- 갤러리 사진 등록 -->
+  <servlet>
+  		<servlet-name>AdminGoodsFrontController</servlet-name>
+		<servlet-class>com.itwillbs.admin.goods.action.AdminGoodsFrontController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>AdminGoodsFrontController</servlet-name>
+      <url-pattern>*.ag</url-pattern>
+  </servlet-mapping>  
+  <!-- 갤러리 사진 등록 -->
+
+
+</web-app>
