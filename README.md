@@ -1,7 +1,8 @@
 # BAM(busan Art Museum) 게시판 홈페이지
 
-## 1. 개발 목적 
+## 1. 홈페이지 설명 
 JSP MVC2모델로 첫구현 한 게시판 로그인 회원가입이 존재하는 페이지입니다.
+부산시립미술관페이지를 참고하여 제작하였습니다.
 
 &nbsp;
 ## 1-1. 개발 기간 
@@ -35,58 +36,55 @@ JSP MVC2모델로 첫구현 한 게시판 로그인 회원가입이 존재하는
   <summary>메인 화면</summary>
   <br />
   <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188764856-79f5ade4-00bb-4c36-824b-9622e163e981.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188774753-27df0b0f-cc04-441a-a3b9-37b17e9e5005.png" />
   </div>
 </details>
 <details>
   <summary>로그인 화면</summary>
   <br />
   <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188765140-0033d732-d229-4e12-b939-d63699995664.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188775013-bd33aaac-c2b1-4adf-97ea-fd821a6a2ae8.png" />
   </div>
 </details>
 <details>
   <summary>회원가입 화면</summary>
   <br />
   <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188765253-3361674b-ff11-42c6-b0d6-2cab89807b10.png" />
-     <image src="https://user-images.githubusercontent.com/107968231/188765269-16861461-c17e-4b1d-9ec8-3637016d3985.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188774812-cfb9440b-0884-4c72-833a-8931430406f1.png" />
+     <image src="https://user-images.githubusercontent.com/107968231/188774856-066ffba9-98c2-45db-8747-8bd2cd3641d5.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188774870-9423e6ca-1965-427f-85b8-43599b9ad134.png" />
   </div>
 </details>
 <details>
   <summary>마이페이지</summary>
   <br />
   <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188765380-9ad8b41c-82bc-4490-8066-d975a8586e2c.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188775182-afab7fd5-5406-476c-a753-8359cffc11b3.png" />
+        <image src="https://user-images.githubusercontent.com/107968231/188775316-5e31e3fb-5be5-40be-afda-f1cc3c2e9ea2.png" />
   </div>
 </details>
 <details>
   <summary>관리자 페이지</summary>
   <br />
   <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188766547-c690ef2a-da9b-480d-81a1-e7d6892f19a9.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188775075-b8b040cc-5181-45b8-be71-528aaacceb76.png" />
+        <image src="https://user-images.githubusercontent.com/107968231/188775137-777afe08-483b-4a02-99f7-99f07446e322.png" />
   </div>
 </details>
 <details>
   <summary>게시판</summary>
   <br />
   <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188765651-89454a3a-dd57-456b-b679-8a08761c57a8.png" />
-    <image src="https://user-images.githubusercontent.com/107968231/188765800-db306fb6-ca54-4309-86f3-ea84285a6b7c.png" />
-    <image src="https://user-images.githubusercontent.com/107968231/188765954-fb57e667-64b8-42aa-822b-c2d9abe6c12e.png" />
+     <image src="https://user-images.githubusercontent.com/107968231/188775419-b56807c1-8336-4741-ad91-082e7c21471a.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188775379-3d3c101a-0ed2-43d2-aa51-cd1af07bb004.png" />
+    <image src="" />
   </div>
 </details>
 <details>
-  <summary>코로나 현황 크롤링 화면</summary>
-  <br />
-  <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188766445-6ff31c77-1889-4ee8-82b3-026f4192c7d8.png" />
-  </div>
-</details>
 <details>
-  <summary>선별진료소 위치정보(Kakao Map API) 화면</summary>
+  <summary>google iframe </summary>
   <br />
   <div markdown="1">
-    <image src="https://user-images.githubusercontent.com/107968231/188766222-14edada8-e171-418e-9295-39483ef2d349.png" />
+    <image src="https://user-images.githubusercontent.com/107968231/188775499-1d83b1c1-c146-462a-8aa0-908cafdbbd23.png" />
   </div>
 </details>
