@@ -81,8 +81,7 @@ JSP MVC2모델로 첫구현 한 게시판 로그인 회원가입이 존재하는
   </div>
 </details>
 <details>
-<details>
-  <summary>google iframe </summary>
+  <summary>구글 iframe지도 </summary>
   <br />
   <div markdown="1">
     <image src="https://user-images.githubusercontent.com/107968231/188775499-1d83b1c1-c146-462a-8aa0-908cafdbbd23.png" />
