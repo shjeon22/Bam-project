@@ -1,4 +1,4 @@
-# BAM(busan Art Museum) 게시판 홈페이지
+# BAM(Busan Art Museum) 게시판 홈페이지
 
 ## 1. 홈페이지 설명 
 JSP MVC2모델로 첫구현 한 게시판 로그인 회원가입이 존재하는 페이지입니다.
